@@ -1,0 +1,13 @@
+<h1>
+  Currency pairs
+</h1>
+
+<ul>
+  <% @results_array.each do |curr| %>
+    <li>
+      
+      <a href= "/forex/<%= curr %>">
+        Convert 1 <%= curr %> to...
+    </li>
+  <% end %>
+</ul>
